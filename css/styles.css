@@ -11,3 +11,9 @@ body{
   font-size: 16px;
 }
 
+.contenedor {
+  width: 90%;  /* recordar ++ el % siempre se utiliza como medida relativa, en este caso se utilizara el 90% del body (su contenedor padre)  ++ */
+  max-width: 1000px; /* limita el tamaño maximo del contenedor */
+  margin: auto; /* margenes calculados automaticamente permitiendo que se centre el contenido*/
+  overflow: hidden ;
+}
