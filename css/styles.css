@@ -17,3 +17,100 @@ body{
   margin: auto; /* margenes calculados automaticamente permitiendo que se centre el contenido*/
   overflow: hidden ;
 }
+
+/* HEADER */
+
+header{
+  width: 100%;
+  background: url('../img/bg.jpg') #281A0C;
+  background-size: cover; /* sirve para que abarque todo el ancho disponible, en caso de sobrar un poco de imagen lo oculta*/
+  background-attachment: fixed; /* el fondo quede fijo a la pantalla */
+  background-position: center 0;
+}
+
+header .contenedor{
+  position: relative; /* permite dejar reservado su espacio y moverlo  */
+  height: 700px;
+
+}
+
+header .menu{
+  width: 100%;
+  text-align: right;
+}
+
+header .menu a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-block;
+  text-decoration: none;
+  margin: 40px 20px;
+  position: relative;
+}
+
+header .menu a:hover{
+  text-decoration: underline;
+}
+
+/* TITULO DE LA WEB */
+header  .textos{
+width: 100%;
+color: #fff;
+position: absolute; /* cuando un abslute hijo se encuentra con un relative padre se va a quedar en las dimensiones de su padre, en caso de no haber, toma como padre al body y no lo podriamos controlar */
+top: 50%;
+margin-top: -52px ;
+}
+
+header .textos .nombre{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+header .textos .nombre span{
+  font-weight: 300;
+
+}
+
+header .textos h3{
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.main {
+  background: url(../img/bg-textura.png);
+  background-repeat: repeat;
+}
+
+.main .acerca-de .contenedor{
+  overflow: visible;
+  position: relative; 
+}
+
+.main .acerca-de .foto{
+  width: 80%;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  z-index: 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+}
+
+.main .acerca-de .foto img {
+  vertical-align: top;
+  width: 100%;
+
+}
+
+.main .acerca-de article{
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  width: 50%;
+  top: 150px;
+  z-index: 1;
+  float: right;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0,.35);
+
+}
